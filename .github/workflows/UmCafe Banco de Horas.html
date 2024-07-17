@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UmCafé Banco de Horas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UmCafé Banco de Horas</h1>
+        <div class="input-group">
+            <label for="entrada">Hora de Entrada:</label>
+            <input type="time" id="entrada" required>
+        </div>
+        <div class="input-group">
+            <label for="almoço1">Início do Almoço:</label>
+            <input type="time" id="almoço1" required>
+        </div>
+        <div class="input-group">
+            <label for="almoço2">Fim do Almoço:</label>
+            <input type="time" id="almoço2" required>
+        </div>
+        <div class="input-group">
+            <label for="saida">Hora de Saída:</label>
+            <input type="time" id="saida" required>
+        </div>
+        <div class="input-group">
+            <label for="hd">Horas Esperadas:</label>
+            <input type="time" id="hd" required>
+        </div>
+        <button id="calcularBtn">Calcular</button>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
